@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap&quot");
+
+
+@import "tailwindcss";
+
+body{
+  font-family: Nunito;
+}
+.show{
+  display: none;
+}
+.beforeBg::before{
+  content: "";
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.beforeBgPro::before{
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.slides{
+    opacity: 0;
+}
+.slides.current{
+    opacity: 1;
+    transition: all 0.2s ease;
+}
+
+.slides .content{
+    opacity: 0;
+
+}
+.slides.current .content{
+    opacity: 1;
+    transition: all 0.1s ease;
+   
+}
+.main.changeColor{
+  background-color: white;
+  transition: all;
+}
+.main{
+  background-color: #656565;
+}
+
+.anime1{
+  animation: animiton1 3s ;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animiton1 {
+  0%{
+    width: 5%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+.anime2{
+  animation: animiton2 3s ;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animiton2 {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 90%;
+  }
+}
+.anime3{
+  animation: animiton3 3s ;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animiton3 {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 80%;
+  }
+}
+.anime4{
+  animation: animiton4 3s ;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animiton4 {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 70%;
+  }
+}
+
+.black{
+  background-color: black;
+  opacity: 0.9;
+  height: 80px;
+  transition: all 1s;
+
+}
+
+.flash{
+  display: none;
+}
